@@ -1,10 +1,13 @@
-def gitrepo = 'https://github.com/osemych/hello-world.git'
+String gitrepo = 'https://github.com/osemych/hello-world.git'
 
-job('job-hello-world') {
+job("job-hello-world") {
   scm {
-    git(gitrepo)
+    git gitrepo
+  }
+  trigers {
+    scm 'H/5 * * * *'
   }
   steps {
-    shell('echo Hello world!')
+    shell 'echo Hello world!'
   }
 }
