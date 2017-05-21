@@ -8,6 +8,6 @@ job("job-hello-world") {
     scm 'H/5 * * * *'
   }
   steps {
-    shell 'echo Hello world!'
+    shell 'sh Hello world!'
   }
 }
