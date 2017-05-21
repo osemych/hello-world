@@ -8,4 +8,3 @@ job('job-hello-world') {
     shell('echo Hello world!')
   }
 }
-
