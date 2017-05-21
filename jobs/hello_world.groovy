@@ -4,7 +4,7 @@ job("job-hello-world") {
   scm {
     git gitrepo
   }
-  trigers {
+  triggers {
     scm 'H/5 * * * *'
   }
   steps {
