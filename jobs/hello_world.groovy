@@ -1,7 +1,7 @@
 String gitrepo = 'https://github.com/osemych/hello-world.git'
 
-job("job-hello-world-slave01") {
-    label(slave-node01)
+job('job-hello-world-slave01') {
+    label('slave-node01')
     scm {
         git gitrepo
     }
@@ -10,8 +10,8 @@ job("job-hello-world-slave01") {
     }
 }
 
-job("job-hello-world-slave02") {
-    label(slave-node02)
+job('job-hello-world-slave02') {
+    label('slave-node02')
     scm {
         git gitrepo
     }
