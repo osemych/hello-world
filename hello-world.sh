@@ -1,3 +1,3 @@
 #!/bin/sh env
 
-echo "Hello world!"
+echo "Job complete on node: $(hostname) ($(hostanme -I)"
